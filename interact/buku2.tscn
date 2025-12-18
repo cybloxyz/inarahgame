@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfitx3u5fspk2"]
+
+[ext_resource type="Script" uid="uid://b7nw8l888076i" path="res://dialog/interactable.gd" id="1_5gxpw"]
+[ext_resource type="Texture2D" uid="uid://d0x7ly18vc4l" path="res://assets/tcd.png" id="2_bs285"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hi50n"]
+size = Vector2(50, 58)
+
+[node name="Buku2" type="Area2D"]
+script = ExtResource("1_5gxpw")
+
+[node name="Tcd" type="Sprite2D" parent="."]
+position = Vector2(-1, 1)
+texture = ExtResource("2_bs285")
+region_enabled = true
+region_rect = Rect2(245, 144, 43, 55)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 1)
+shape = SubResource("RectangleShape2D_hi50n")

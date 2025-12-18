@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkf0kiiuh6bkj"]
+
+[ext_resource type="Script" uid="uid://b7nw8l888076i" path="res://dialog/interactable.gd" id="1_8perk"]
+[ext_resource type="Texture2D" uid="uid://d0x7ly18vc4l" path="res://assets/tcd.png" id="2_t7a0k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3i6g7"]
+size = Vector2(55, 69)
+
+[node name="Hadiah2" type="Area2D"]
+script = ExtResource("1_8perk")
+
+[node name="Tcd" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+texture = ExtResource("2_t7a0k")
+region_enabled = true
+region_rect = Rect2(128, 68, 48, 60)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -3.5)
+shape = SubResource("RectangleShape2D_3i6g7")
