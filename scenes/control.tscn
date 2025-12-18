@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvblc7ansuxh0"]
+
+[ext_resource type="Texture2D" uid="uid://bfh5hnovj0fk2" path="res://assets/arrow.png" id="1_r67kn"]
+[ext_resource type="Texture2D" uid="uid://b44wyhbfcfib" path="res://assets/arrow-export.png" id="2_brbbq"]
+[ext_resource type="Texture2D" uid="uid://btsjvrewgbkfx" path="res://assets/base.png" id="3_8n18e"]
+[ext_resource type="Texture2D" uid="uid://bwyt6cgurasyt" path="res://assets/stick.png" id="4_tjwpk"]
+
+[node name="control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="right" type="TouchScreenButton" parent="."]
+position = Vector2(167, 491)
+texture_normal = ExtResource("1_r67kn")
+texture_pressed = ExtResource("2_brbbq")
+passby_press = true
+action = "ui_right"
+
+[node name="left" type="TouchScreenButton" parent="."]
+position = Vector2(130, 585)
+rotation = -3.14159
+texture_normal = ExtResource("1_r67kn")
+texture_pressed = ExtResource("2_brbbq")
+passby_press = true
+action = "ui_left"
+
+[node name="jump" type="TouchScreenButton" parent="."]
+position = Vector2(972, 491)
+texture_normal = ExtResource("3_8n18e")
+texture_pressed = ExtResource("4_tjwpk")
+passby_press = true
+action = "ui_accept"
