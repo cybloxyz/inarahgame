@@ -30,6 +30,13 @@ func _on_body_entered(body):
 			if interact_btn.pressed.is_connected(_start_dialog):
 				interact_btn.pressed.disconnect(_start_dialog)
 			interact_btn.pressed.connect(_start_dialog)
+			
+		elif interact_btn:
+			interact_btn.visible = true
+			
+			if interact_btn.pressed.is_connected(_thing):
+				interact_btn.pressed.is_connected(_thing)
+			interact_btn.pressed.connect(_thing)
 
 func _on_body_exited(body):
 	if body.name == "CharacterBody2D":
@@ -38,6 +45,12 @@ func _on_body_exited(body):
 			if interact_btn.pressed.is_connected(_start_dialog):
 				interact_btn.pressed.disconnect(_start_dialog)
 
+func _thing():
+	if not was_collected:
+		GameManager.collect_item()
+		was_collected = true
+		queue_free()
+		
 func _start_dialog():
 	if dialogue_resource:
 		DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)

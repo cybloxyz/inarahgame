@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+const SPEED = 350.0
 const JUMP_VELOCITY = -450.0 # Kamu bisa ubah angka ini untuk tinggi lompatan
 
 # Ambil gravitasi otomatis dari settingan Godot

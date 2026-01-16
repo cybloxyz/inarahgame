@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="teacherss"
-run/main_scene="uid://yfqq03s5f6vp"
+config/tags=PackedStringArray("event")
+run/main_scene="uid://c3is66wdlcpm7"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -23,6 +24,8 @@ GameManager="*res://script/GameManager.gd"
 [display]
 
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
 
 [editor_plugins]
 
@@ -42,7 +45,7 @@ pointing/emulate_touch_from_mouse=true
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialog/board.dialogue", "res://dialog/buku1.dialogue", "res://dialog/buku2.dialogue", "res://dialog/buku3.dialogue", "res://dialog/bukubatas.dialogue", "res://dialog/buku4.dialogue", "res://dialog/bunga1.dialogue", "res://dialog/bunga2.dialogue", "res://dialog/bunga3.dialogue", "res://dialog/hadiah1.dialogue", "res://dialog/hadiah2.dialogue", "res://dialog/letter.dialogue", "res://dialog/key.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialog/board.dialogue", "res://dialog/buku1.dialogue", "res://dialog/buku2.dialogue", "res://dialog/buku3.dialogue", "res://dialog/bukubatas.dialogue", "res://dialog/buku4.dialogue", "res://dialog/bunga1.dialogue", "res://dialog/bunga2.dialogue", "res://dialog/bunga3.dialogue", "res://dialog/hadiah1.dialogue", "res://dialog/hadiah2.dialogue", "res://dialog/letter.dialogue", "res://dialog/key.dialogue", "res://dialog/buku5.dialogue", "res://dialog/buku6.dialogue", "res://dialog/buku7.dialogue", "res://dialog/buku8.dialogue", "res://dialog/buku9.dialogue", "res://dialog/last.dialogue", "res://dialog/letter2.dialogue", "res://dialog/frag.dialogue", "res://dialog/frag2.dialogue", "res://dialog/frag3.dialogue", "res://dialog/frag4.dialogue", "res://dialog/frag5.dialogue", "res://dialog/npc.dialogue")
 
 [layer_names]
 
@@ -54,3 +57,4 @@ locale/translations_pot_files=PackedStringArray("res://dialog/board.dialogue", "
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

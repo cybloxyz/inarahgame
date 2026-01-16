@@ -13,24 +13,49 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
 
-[node name="right" type="TouchScreenButton" parent="."]
-position = Vector2(167, 491)
+[node name="kiribawah" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -234.0
+offset_right = 394.0
+grow_vertical = 0
+
+[node name="right" type="TouchScreenButton" parent="kiribawah"]
+position = Vector2(219, 9)
+scale = Vector2(1.41, 1.39)
 texture_normal = ExtResource("1_r67kn")
 texture_pressed = ExtResource("2_brbbq")
 passby_press = true
 action = "ui_right"
 
-[node name="left" type="TouchScreenButton" parent="."]
-position = Vector2(130, 585)
+[node name="left" type="TouchScreenButton" parent="kiribawah"]
+position = Vector2(179, 151)
 rotation = -3.14159
+scale = Vector2(1.31066, 1.5669)
 texture_normal = ExtResource("1_r67kn")
 texture_pressed = ExtResource("2_brbbq")
 passby_press = true
 action = "ui_left"
 
-[node name="jump" type="TouchScreenButton" parent="."]
-position = Vector2(972, 491)
+[node name="kananbawah" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -225.0
+offset_top = -211.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="jump" type="TouchScreenButton" parent="kananbawah"]
+scale = Vector2(1.37, 1.41)
 texture_normal = ExtResource("3_8n18e")
 texture_pressed = ExtResource("4_tjwpk")
 passby_press = true
@@ -41,9 +66,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -67.5
-offset_right = 67.5
-offset_bottom = 69.0
+offset_left = -77.5
+offset_right = 77.5
+offset_bottom = 89.0
 grow_horizontal = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
@@ -53,10 +78,10 @@ theme_override_constants/margin_bottom = 20
 [node name="Label" type="Label" parent="MarginContainer" groups=["ui_label"]]
 layout_mode = 2
 size_flags_horizontal = 8
-size_flags_vertical = 8
+size_flags_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_tjwpk")
 theme_override_font_sizes/font_size = 48
-text = "0/12"
+text = "0/11"
 horizontal_alignment = 1
 justification_flags = 171

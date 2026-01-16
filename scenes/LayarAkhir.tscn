@@ -20,10 +20,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -217.0
-offset_top = -144.0
-offset_right = 217.0
-offset_bottom = 144.0
+offset_left = -492.0
+offset_top = -255.0
+offset_right = 483.0
+offset_bottom = 264.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
@@ -31,24 +31,29 @@ theme_override_constants/separation = 20
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_upqfn")
-theme_override_font_sizes/font_size = 24
-text = "terimakasih sudah menjadi guru dengan versi  terbaik"
+theme_override_font_sizes/font_size = 35
+text = "YOUR TIME IS OUT"
 
 [node name="Label2" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_upqfn")
-text = "punya pesan untuk kami? "
+theme_override_font_sizes/font_size = 26
+text = "see you on top.."
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer" groups=["input_email"]]
-custom_minimum_size = Vector2(500, 200)
+custom_minimum_size = Vector2(500, 250)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_upqfn")
-placeholder_text = "ketik disini ya.."
+theme_override_font_sizes/font_size = 24
+placeholder_text = "nama:
+
+buat pesan untuk kami?"
 
 [node name="Button" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("1_upqfn")
+theme_override_font_sizes/font_size = 24
 text = "kirim balasan"
 script = ExtResource("2_bp8td")
 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cwicii4lov1jy"
+path="res://.godot/imported/buku7.dialogue-f5a154c4bcd2c32085e752f7aeb56d50.tres"
+
+[deps]
+
+source_file="res://dialog/buku7.dialogue"
+dest_files=["res://.godot/imported/buku7.dialogue-f5a154c4bcd2c32085e752f7aeb56d50.tres"]
+
+[params]
+
+defaults=true
